@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kbaldor.rxcontactstatus.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:background="@color/background_material_dark">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Contacts"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="35sp"
+                android:textColor="#ffffff"/>
+
+   <!--         <ImageView
+                android:id="@+id/imgPlus"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:src="@drawable/ic_plus"
+                android:padding="5dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"/>-->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+            <EditText
+                android:id="@+id/newUserTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="left"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:hint="New user"/>
+
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="7"
+                android:text="Save"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:clickable="true"/>
+
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/contactsList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:padding="10dp" />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
